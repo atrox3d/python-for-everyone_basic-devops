@@ -7,7 +7,9 @@ authors = [
     { name = "atrox3d", email = "atrox3d@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pytest>=8.3.5",
+]
 
 [project.scripts]
 basic-devops = "calculator:main"
@@ -15,3 +17,13 @@ basic-devops = "calculator:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+
+# ValueError: Unable to determine which files to ship inside the wheel using the following heuristics: https://hatch.pypa.io/latest/plugins/builder/wheel/#default-file-selection
+# The most likely cause of this is that there is no directory that matches the name of your project (basic_devops).
+# At least one file selection option must be defined in the `tool.hatch.build.targets.wheel` table, see: https://hatch.pypa.io/latest/config/build/
+# As an example, if you intend to ship a directory named `foo` that resides within a `src` directory located at the root of your project, you can define the following:
+# [tool.hatch.build.targets.wheel]
+#       packages = ["src/foo"]
+[tool.hatch.build.targets.wheel]
+    packages = ["src/calculator"]
