@@ -10,7 +10,7 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.scripts]
-basic-devops = "basic_devops:main"
+basic-devops = "calculator:main"
 
 [build-system]
 requires = ["hatchling"]
