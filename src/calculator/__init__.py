@@ -1,2 +1,2 @@
 def main() -> None:
-    print("Hello from basic-devops!")
+    print("Hello calculator:__init__!")

@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-basic-devops = "calculator:main"
+calculator = "calculator:main"
 
 [build-system]
 requires = ["hatchling"]
