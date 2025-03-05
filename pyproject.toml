@@ -1,0 +1,17 @@
+[project]
+name = "basic-devops"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "atrox3d", email = "atrox3d@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+basic-devops = "basic_devops:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
