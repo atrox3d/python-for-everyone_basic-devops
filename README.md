@@ -5,6 +5,11 @@
 uv pip install -e .
 uv pip freeze
 uv pip list
+uv run <script>
 uv pip uninstall .
+````
+
+```
+flake8 --exclude=.venv
 ````
 
